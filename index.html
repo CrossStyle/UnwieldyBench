@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="Unwieldy-Bench: Stress-testing Humanoid Loco-Manipulation with Heavy, Extended, and Irregular Payloads"
+          name="description">
+    <meta content="Humanoid loco-manipulation, Unwieldy object transportation, Heavy-load transportation, Benchmark" name="keywords">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Unwieldy-Bench: Stress-testing Humanoid Loco-Manipulation with Heavy, Extended, and Irregular Payloads</title>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+          dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'G-PYVRSFMDRL');
+    </script>
+
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+          rel="stylesheet">
+
+    <link href="./static/css/bulma.min.css" rel="stylesheet">
+    <link href="./static/css/bulma-carousel.min.css" rel="stylesheet">
+    <link href="./static/css/bulma-slider.min.css" rel="stylesheet">
+    <link href="./static/css/fontawesome.all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css"
+          rel="stylesheet">
+    <link href="./static/css/index.css" rel="stylesheet">
+    <link href="./static/images/favicon.png" rel="icon">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="./static/js/fontawesome.all.min.js"></script>
+    <script src="./static/js/bulma-carousel.min.js"></script>
+    <script src="./static/js/bulma-slider.min.js"></script>
+    <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Unwieldy-Bench: Stress-testing Humanoid Loco-Manipulation with Heavy, Extended, and Irregular Payloads</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+                Anonymous Authors
+                
+              <!-- <a href="https://www.linkedin.com/in/zaolin-pan-a9165923b/">Zaolin Pan</a>,
+            </span>
+            <span class="author-block">
+              <a href="https://www.civil.columbia.edu/content/zhengbo-zou/">Zhengbo Zou</a>,
+            </span>
+            <span class="author-block">
+              <a href="https://seng.hkust.edu.hk/about/people/faculty/yantao-yu/">Yantao Yu</a>,
+            </span> -->
+          </div>
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="./static/paper/bigym_paper.pdf"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+
+              <!-- Video Link. -->
+              <!-- <span class="link-block">
+                <a href="https://www.youtube.com/watch?v=jFhhPkFngwk"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span> -->
+
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/chernyadev/bigym"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code (Coming soon)</span>
+                  </a>
+              </span>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero is-light is-small">
+    <div class="hero-body">
+        <div class="container">
+            <div class="carousel results-carousel" id="results-carousel">
+                <div class="item item-dishwasher-load-cups">
+                    <video autoplay controls height="100%" id="dishwasher-load-cups" loop muted playsinline poster="">
+                        <source src="./static/videos/barrier front carry short.mp4"
+                                type="video/mp4">
+                    </video>
+                </div>
+                <div class="item item-dishwasher-open">
+                    <video autoplay controls height="100%" id="dishwasher-open" loop muted playsinline poster="">
+                        <source src="./static/videos/barrier side carrt short.mp4"
+                                type="video/mp4">
+                    </video>
+                </div>
+                <div class="item item-flip-cup">
+                    <video autoplay controls height="100%" id="flip-cup" loop muted playsinline poster="">
+                        <source src="./static/videos/hframe front carry short.mp4"
+                                type="video/mp4">
+                    </video>
+                </div>
+                <div class="item item-remove-sandwich">
+                    <video autoplay controls height="100%" id="remove-sandwich" loop muted playsinline poster="">
+                        <source src="./static/videos/hframe low carry short.mp4"
+                                type="video/mp4">
+                    </video>
+                </div>
+                <div class="item item-take-cups">
+                    <video autoplay controls height="100%" id="take-cups" loop muted playsinline poster="">
+                        <source src="./static/videos/platform.mp4"
+                                type="video/mp4">
+                    </video>
+                </div>
+                <div class="item item-groceries-store-upper">
+                    <video autoplay controls height="100%" id="groceries-store-upper" loop muted playsinline poster="">
+                        <source src="./static/videos/pallet side carrt short.mp4"
+                                type="video/mp4">
+                    </video>
+                </div>
+                <div class="item item-groceries-store-upper">
+                    <video autoplay controls height="100%" id="groceries-store-upper" loop muted playsinline poster="">
+                        <source src="./static/videos/pallet front carry.mp4"
+                                type="video/mp4">
+                    </video>
+                </div>
+                                <div class="item item-groceries-store-upper">
+                    <video autoplay controls height="100%" id="groceries-store-upper" loop muted playsinline poster="">
+                        <source src="./static/videos/shelf high front carry.mp4"
+                                type="video/mp4">
+                    </video>
+                </div>
+                                <div class="item item-groceries-store-upper">
+                    <video autoplay controls height="100%" id="groceries-store-upper" loop muted playsinline poster="">
+                        <source src="./static/videos/ladder front carry.mp4"
+                                type="video/mp4">
+                    </video>
+                </div>
+                                <div class="item item-groceries-store-upper">
+                    <video autoplay controls height="100%" id="groceries-store-upper" loop muted playsinline poster="">
+                        <source src="./static/videos/ladder shoulder carrt short.mp4"
+                                type="video/mp4">
+                    </video>
+                </div>
+                                <div class="item item-groceries-store-upper">
+                    <video autoplay controls height="100%" id="groceries-store-upper" loop muted playsinline poster="">
+                        <source src="./static/videos/floorlamp front carry short.mp4"
+                                type="video/mp4">
+                    </video>
+                </div>
+                                <div class="item item-groceries-store-upper">
+                    <video autoplay controls height="100%" id="groceries-store-upper" loop muted playsinline poster="">
+                        <source src="./static/videos/chair hugging short.mp4"
+                                type="video/mp4">
+                    </video>
+                </div>
+                                <div class="item item-groceries-store-upper">
+                    <video autoplay controls height="100%" id="groceries-store-upper" loop muted playsinline poster="">
+                        <source src="./static/videos/chair front carry.mp4"
+                                type="video/mp4">
+                    </video>
+                </div>
+                                <div class="item item-groceries-store-upper">
+                    <video autoplay controls height="100%" id="groceries-store-upper" loop muted playsinline poster="">
+                        <source src="./static/videos/Shelf front carry.mp4"
+                                type="video/mp4">
+                    </video>
+                </div>
+                                <div class="item item-groceries-store-upper">
+                    <video autoplay controls height="100%" id="groceries-store-upper" loop muted playsinline poster="">
+                        <source src="./static/videos/stool hug short.mp4"
+                                type="video/mp4">
+                    </video>
+                </div>
+                                <div class="item item-groceries-store-upper">
+                    <video autoplay controls height="100%" id="groceries-store-upper" loop muted playsinline poster="">
+                        <source src="./static/videos/cmu hug short.mp4"
+                                type="video/mp4">
+                    </video>
+                </div>
+                                <div class="item item-groceries-store-upper">
+                    <video autoplay controls height="100%" id="groceries-store-upper" loop muted playsinline poster="">
+                        <source src="./static/videos/box hug short.mp4"
+                                type="video/mp4">
+                    </video>
+                </div>
+                                <div class="item item-groceries-store-upper">
+                    <video autoplay controls height="100%" id="groceries-store-upper" loop muted playsinline poster="">
+                        <source src="./static/videos/plank front carry short.mp4"
+                                type="video/mp4">
+                    </video>
+                </div>
+                                <div class="item item-groceries-store-upper">
+                    <video autoplay controls height="100%" id="groceries-store-upper" loop muted playsinline poster="">
+                        <source src="./static/videos/plank side carrt short.mp4"
+                                type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="section">
+    <div class="container is-max-desktop">
+        <!-- Abstract. -->
+        <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+                <h2 class="title is-3">Abstract</h2>
+                <div class="content has-text-justified">
+                    <p>
+                        Humanoid robots are increasingly expected to operate in real-world scenarios requiring heavy-duty 
+                        whole-body transportation, including logistics, construction, and industrial material handling. 
+                        However, transporting large and heavy objects fundamentally changes humanoid control dynamics: 
+                        strong coupling between the robot and payload induces severe center-of-mass shifts, momentum 
+                        amplification, and destabilizing whole-body oscillations that frequently break existing balance. 
+                        In this work, we introduce Unwieldy-Bench, a stress-test benchmark for humanoid transportation 
+                        under heavy-load and inertially challenging object dynamics. Our analysis shows that representative 
+                        imitation-based controllers degrade sharply in this regime because conventional approaches primarily 
+                        optimize pose and trajectory tracking while largely ignoring whole-body momentum evolution. 
+                        Motivated by this insight, we introduce a lightweight momentum-aware shaping strategy to regularize 
+                        payload-induced angular momentum. Experiments demonstrate that even this simple modification improves 
+                        transportation stability, reduces object drop rates, and extends the feasible load range across diverse 
+                        unwieldy transportation scenarios.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!--/ Abstract. -->
+
+        <!-- Paper video. -->
+        <!-- <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+                <h2 class="title is-3">Video</h2>
+                <div class="publication-video">
+                    <iframe allow="autoplay; encrypted-media" allowfullscreen
+                            frameborder="0"
+                            src="https://www.youtube.com/embed/jFhhPkFngwk?rel=0&amp;showinfo=0"></iframe>
+                </div>
+            </div>
+        </div> -->
+        <!--/ Paper video. -->
+    </div>
+</section>
+
+
+<footer class="footer">
+    <div class="columns is-centered">
+        <div class="column is-8">
+            <div class="content">
+                <p>
+                    Template based on <a href="https://github.com/nerfies/nerfies.github.io">nerfies</a> website.
+                    This website is licensed under a <a href="http://creativecommons.org/licenses/by-sa/4.0/"
+                                                        rel="license">Creative Commons Attribution-ShareAlike 4.0
+                    International License</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+    </div>
+</footer>
+</body>
+</html>
