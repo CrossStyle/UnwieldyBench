@@ -237,19 +237,17 @@
                 <h2 class="title is-3">Abstract</h2>
                 <div class="content has-text-justified">
                     <p>
-                        Humanoid robots are increasingly expected to operate in real-world scenarios requiring heavy-duty 
-                        whole-body transportation, including logistics, construction, and industrial material handling. 
-                        However, transporting large and heavy objects fundamentally changes humanoid control dynamics: 
-                        strong coupling between the robot and payload induces severe center-of-mass shifts, momentum 
-                        amplification, and destabilizing whole-body oscillations that frequently break existing balance. 
-                        In this work, we introduce Unwieldy-Bench, a stress-test benchmark for humanoid transportation 
-                        under heavy-load and inertially challenging object dynamics. Our analysis shows that representative 
-                        imitation-based controllers degrade sharply in this regime because conventional approaches primarily 
-                        optimize pose and trajectory tracking while largely ignoring whole-body momentum evolution. 
-                        Motivated by this insight, we introduce a lightweight momentum-aware shaping strategy to regularize 
-                        payload-induced angular momentum. Experiments demonstrate that even this simple modification improves 
-                        transportation stability, reduces object drop rates, and extends the feasible load range across diverse 
-                        unwieldy transportation scenarios.
+                        Humanoid robots are increasingly expected to operate in real-world settings that require heavy-duty 
+                        whole-body transport, such as logistics, construction, and industrial material handling. However, 
+                        transporting large and heavy objects fundamentally alters humanoid control dynamics: strong robot-payload 
+                        coupling can induce substantial shifts in the combined center of mass, amplify angular momentum, and trigger 
+                        destabilizing whole-body oscillations that challenge existing loco-manipulation controllers. We introduce 
+                        Unwieldy-Bench, a benchmark for stress-testing humanoid transport with heavy, extended, and irregular payloads. 
+                        Our analysis shows that representative imitation-based controllers degrade sharply in this regime, as conventional 
+                        approaches primarily optimize pose and trajectory tracking while largely neglecting whole-body momentum evolution. 
+                        Motivated by this observation, we introduce DDM, a lightweight dynamics-aware reward-shaping strategy that regularizes 
+                        payload-induced angular momentum. Experiments demonstrate that DDM improves transportation stability, reduces object 
+                        drop rates, and extends the feasible load range across diverse unwieldy transportation scenarios.
                     </p>
                 </div>
             </div>
